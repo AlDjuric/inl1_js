@@ -1,0 +1,201 @@
+// Base imports
+@import "base/variables";
+@import "utils/mixins";
+
+// Theme
+//@import "themes/dark-mode";
+
+// Layout
+@import "layout/layout";
+@import "layout/header";
+
+// Components
+@import "components/buttons";
+@import "components/forms";
+@import "components/navbar";
+@import "components/testimonials";
+@import "components/components";
+@import "components/subscribe-box";
+@import "components/footer";
+
+// Pages
+@import "pages/features";
+@import "pages/money-transfer-payments";
+@import "pages/faq";
+@import "utils/media-queries";
+
+// Global styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+// Global font settings
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+///////////////
+// Dark mode //
+///////////////
+.dark-mode {
+  body {
+    background-color: #0b0f19;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $dark-text-color !important;
+    }
+
+    p {
+      color: $dark-gray-color !important;
+      opacity: 0.6;
+    }
+  }
+
+  // Navbar styles
+  .nav-menu li a {
+    color: $color-white !important;
+  }
+
+  .toggle-switch p {
+    color: $color-white !important;
+  }
+
+  // Card or Section Styles
+  .card {
+    background-color: $dark-bg-color;
+  }
+
+  // How it works styles
+  #how-it-works {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+
+    .container {
+      opacity: 1 !important;
+    }
+  }
+
+  // Features styles
+  #features {
+    p {
+      color: $dark-gray-color !important;
+    }
+  }
+
+  // Testimonials styles
+  #testimonials {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+  }
+
+  .testimonial-item {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+
+    p {
+      color: $dark-gray-color !important;
+    }
+
+    .author-name {
+      color: $dark-text-color !important;
+    }
+
+    .author-title {
+      color: $dark-gray-color !important;
+    }
+  }
+
+  // Money Transfer and Payments styles
+  #money-transfer-and-payments {
+    background-color: #0b0f19 !important;
+
+    ul {
+      color: $dark-gray-color;
+    }
+  }
+
+  // FAQ styles
+
+  .faq-accordion {
+    background-color: #0b0f19 !important;
+
+    .faq-question {
+      background-color: rgba(255, 255, 255, 0.06) !important;
+      color: $color-white !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .faq-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.06);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        &::before {
+          content: "\f078"; // FontAwesome chevron-down icon
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+        }
+
+        &.active {
+          transform: rotate(180deg);
+          background-color: #6366f1;
+        }
+      }
+    }
+
+    .faq-answer {
+      background-color: rgba(255, 255, 255, 0.06) !important;
+
+      p {
+        color: $color-white !important;
+      }
+    }
+  }
+
+  .subscribe-box {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+
+    .subscribe-form {
+      .input-wrapper {
+        input[type="email"] {
+          background-color: inherit;
+          border: solid;
+          border-color: rgba(243, 235, 235, 0.329);
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #0b0f19 !important;
+
+    p {
+      color: $dark-gray-color !important;
+    }
+  }
+
+  .discover-more {
+    color: $color-white !important;
+
+    .chevron-circle {
+      width: 36px;
+      height: 36px;
+      background-color: rgba(255, 255, 255, 0.06) !important;
+    }
+
+    &:hover .icon-r {
+      background-color: #6366f1 !important;
+    }
+  }
+} // Dark mode end

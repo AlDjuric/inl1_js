@@ -1,0 +1,5 @@
+@function calculate-width($total, $subtract) {
+    @return calc(#{$total} - #{$subtract});
+}
+
+$hero-width: calculate-width(100%, 620px);

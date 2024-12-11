@@ -1,0 +1,136 @@
+#money-transfer-and-payments {
+    padding-top: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .transfer-section,
+    .international-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        max-width: 1200px;
+        width: 100%;
+
+        .content {
+            flex: 1;
+            padding-right: 2rem;
+
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 1rem 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 0.5rem;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            button {
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .icon-r {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+
+        .image,
+        .image-grid {
+            flex: 1;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .transfer-section {
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .main-image {
+                max-width: 80%;
+            }
+        }
+    }
+
+    .international-section {
+        flex-direction: row-reverse;
+
+        .content {
+            padding-right: 2rem;
+            padding-left: 0;
+
+            .feature-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+            }
+
+            .feature-item {
+                flex-basis: 48%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                .feature-icon {
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .feature-content {
+                    p {
+                        font-size: 14px;
+                        color: $color-p;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .image-grid {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secondary-image {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
